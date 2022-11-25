@@ -19,8 +19,7 @@ render(){
             <li>{this.more_Details.languages[2]}</li>
             <li>{this.more_Details.languages[3]}</li>
             </ul>
-           
-            <button className = "btn btn-danger">KANTHARA</button>  
+            <button className = "btn btn-danger">BOOK TICKET</button>  
             </>         
 }
 }
