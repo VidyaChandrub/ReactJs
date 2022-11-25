@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom'
-import compA from './compA'
+import ClassA from './ClassA'
+//import CompA from './CompA'
 //import Movie from './Movie'
 //import App from './App'
 // import Message from './Message'
@@ -10,4 +11,6 @@ import compA from './compA'
 //ReactDOM.render(<App/>,document.getElementById('root'));
 // ReactDOM.render(<Message/>,document.getElementById('root'));
 //ReactDOM.render(<Movie/>,document.getElementById('root'));
-ReactDOM.render(compA,document.getElementById('root'))
+//ReactDOM.render(<CompA/>,document.getElementById('root'));
+ReactDOM.render(<ClassA/>,document.getElementById('root'));
+
