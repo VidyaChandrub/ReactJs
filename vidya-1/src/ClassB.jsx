@@ -8,6 +8,9 @@ class ClassB extends React.Component{
                 <p>User_Name : {this.props.user_det.user_Name}</p>
                 <p>User_mail : {this.props.user_det.user_email}</p>
                 <p>User_phoneNo : {this.props.user_det.user_phNo}</p>
+                <p>
+                  
+                </p>
              </>
 
     )

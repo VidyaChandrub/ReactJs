@@ -1,7 +1,9 @@
 /* import ClsFun1 from "./ClsFun1" */
 /* import FunCls1 from "./FunCls1" */
 /* import State from "./State" */
-import StateEx from "./StateEx"
+import StateEx from "./StateEx" 
+import Navbar from './Navbar'
+import ShoppingList from './Examples/ShoppingList'
 
 
 let App = () => {
@@ -12,8 +14,10 @@ let App = () => {
                                                                         {/* <ClsFun1 /> */}
                                                                         {/* <FunCls1 /> */}
                                                                         {/* <State /> */}
-
+                                                                        <Navbar />
     <StateEx />
+    <ShoppingList />
+    
     </div>
     
 }
