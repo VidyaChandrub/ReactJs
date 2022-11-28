@@ -29,7 +29,7 @@ render(){
                                     <th>Total</th>
                                     </tr>
                                 </thead>
-                                <tbody  valign="middle">
+                                <tbody  valign="middle" align="center">
                                     <tr  >
                                     <td >{this.state.product_Name}</td>
                                     <td><img src={this.state.product_Image} height="40px" weight="40px"/></td>
@@ -42,10 +42,7 @@ render(){
                         </div>
                     </div>
                 </div>
-                
-    
-    
-           </>
+                </>
 }
 
 }
