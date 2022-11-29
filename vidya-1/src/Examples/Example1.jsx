@@ -1,5 +1,5 @@
 import React from "react";
-import Example2 from "./Example2";
+/* import Example2 from "./Example2"; */
 /* class ShoppingList extends React.Component {
     render() {
       return (
@@ -50,7 +50,7 @@ import Example2 from "./Example2";
   }
   export default Example1 */
 
-  let Example1 = () => {
+  /* let Example1 = () => {
    let message = "Good afternoon";
    let Employee = {
     emp_name : "Padma",
@@ -62,4 +62,6 @@ import Example2 from "./Example2";
            <Example2 msg={message} emp={Employee} ph={phone} />
           </>
    }
-  export default Example1
+  export default Example1 */
+
+

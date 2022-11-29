@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 import ShoppingList from './Examples/ShoppingList' */
 /* import Example1 from './Examples/Example1' */
 import Product from './Product/Product'
-
+import Eventbind from './EventBindig/Eventbind'
 
 let App = () => {
 
@@ -21,6 +21,7 @@ let App = () => {
     <ShoppingList /> */}
     {/* <Example1 /> */}
     <Product />
+    <Eventbind />
     
     </div>
     
