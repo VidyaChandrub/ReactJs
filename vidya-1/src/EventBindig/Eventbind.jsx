@@ -6,7 +6,7 @@ class Eventbind extends React.Component{
         msg : "Helloo,,"
     }
     updateHandler = (value) =>{
-        this.setState({msg : value})
+        this.setState({msg :"Helloo,,"+ value})
     }
     render(){
         return(
