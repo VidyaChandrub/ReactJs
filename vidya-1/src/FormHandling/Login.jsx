@@ -11,9 +11,10 @@ class Login extends React.Component{
     passwordHandler = (event) => {
         this.setState({password:event.target.value})
     }
-    /* submitHandler = (event) => {
-        alert(`${this.state.email}`)
-    } */
+    handleSubmit(event) {
+        event.preventDefault();
+    this.setState({submit: this.state.input})
+    }
 render(){
     return(
         <div><h1 className="text-success">Form handling in jsx!</h1>
