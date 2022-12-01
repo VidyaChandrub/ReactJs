@@ -9,7 +9,7 @@ import ShoppingList from './Examples/ShoppingList' */
 import Eventbind from './EventBindig/Eventbind' */
 /* import Movie from './Movie' */
 import Employee from './Employee/Employee'
-/* import Login from "./FormHandling/Login" */
+import Login from "./FormHandling/Login"
 let App = () => {
 
     return <div>

@@ -11,20 +11,22 @@ class Login extends React.Component{
     passwordHandler = (event) => {
         this.setState({password:event.target.value})
     }
-    submitHandler = (event) => {
+    /* submitHandler = (event) => {
         alert(`${this.state.email}`)
-    }
+    } */
 render(){
     return(
-        <div><h1 className="text-danger">Form handling in jsx!</h1>
+        <div><h1 className="text-success">Form handling in jsx!</h1>
 
         <br/><br/>
         <form>
         <label>Email Id</label>
         <input type="text" name="email" value={this.state.email} onChange={this.emailHandler}/><br/><br/>
+        <p>{this.state.email}</p>
         <label>Password</label>
+       
         <input type="text" name="password" value={this.state.password} onChange={this.passwordHandler}/><br/><br/>
-        <input type="submit" value="Login" className="btn btn-success"/>
+        <input type="submit" value="Login" className="btn btn-info"/>
         </form>
         </div>
     );
