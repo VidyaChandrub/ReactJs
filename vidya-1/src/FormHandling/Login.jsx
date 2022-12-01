@@ -25,7 +25,8 @@ render(){
         <p>{this.state.email}</p>
         <label>Password</label>
        
-        <input type="text" name="password" value={this.state.password} onChange={this.passwordHandler}/><br/><br/>
+        <input type="password" name="password" value={this.state.password} onChange={this.passwordHandler}/><br/><br/>
+        <p>{this.state.password}</p>
         <input type="submit" value="Login" className="btn btn-info"/>
         </form>
         </div>
