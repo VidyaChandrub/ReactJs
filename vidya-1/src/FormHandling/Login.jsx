@@ -11,23 +11,26 @@ class Login extends React.Component{
     passwordHandler = (event) => {
         this.setState({password:event.target.value})
     }
-    handleSubmit(event) {
+    handleSubmit = (event) => {
         event.preventDefault();
-    this.setState({submit: this.state.input})
+        console.log(this.state)
+    /* this.setState({submit: this.state.input}) */
     }
+    
 render(){
     return(
-        <div><h1 className="text-success">Form handling in jsx!</h1>
-
+        <div className="text-center">
+        <h1 className="text-success">Form handling in jsx!</h1>
+        <pre>{JSON.stringify(this.state)}</pre>
         <br/><br/>
-        <form>
+        <form onSubmit={this.handleSubmit}>
         <label>Email Id</label>
-        <input type="text" name="email" value={this.state.email} onChange={this.emailHandler}/><br/><br/>
-        <p>{this.state.email}</p>
+        <input type="text" name="email"  onChange={this.emailHandler}/><br/><br/>
+        
         <label>Password</label>
        
-        <input type="password" name="password" value={this.state.password} onChange={this.passwordHandler}/><br/><br/>
-        <p>{this.state.password}</p>
+        <input type="password" name="password" onChange={this.passwordHandler}/><br/><br/>
+        
         <input type="submit" value="Login" className="btn btn-info"/>
         </form>
         </div>

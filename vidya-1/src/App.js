@@ -8,7 +8,7 @@ import ShoppingList from './Examples/ShoppingList' */
 /* import Product from './Product/Product'
 import Eventbind from './EventBindig/Eventbind' */
 /* import Movie from './Movie' */
-import Employee from './Employee/Employee'
+/* import Employee from './Employee/Employee' */
 import Login from "./FormHandling/Login"
 let App = () => {
 
@@ -24,7 +24,7 @@ let App = () => {
     {/* <Example1 /> */}
    {/*  <Product />
     <Eventbind /> */}
-    <Employee />
+    {/* <Employee /> */}
     <Login />
     </div>
     
