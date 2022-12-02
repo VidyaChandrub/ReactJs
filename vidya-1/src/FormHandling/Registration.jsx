@@ -15,7 +15,7 @@ event.preventDefault()
 console.log(this.state)
 }
 render(){
-    return (<div className="container text-center">
+    return (<div className="container text-center form-group">
             <div className="row">
                 <div className="col-md-12">
                     <pre>{JSON.stringify(this.state)}</pre>
@@ -23,7 +23,7 @@ render(){
             
             <form onSubmit={this.submitHandler}>
                 <label>User Name</label>
-                <input type="text" name="userName" onChange={this.updateHandler} /><br/><br />
+                <input type="text" name="userName" onChange={this.updateHandler} className="form-control"/><br/><br />
                 <label>Email Id</label>
                 <input type="text" name="email" onChange={this.updateHandler}/><br/><br />
                 <label>Mobile No</label>
