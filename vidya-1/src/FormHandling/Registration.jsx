@@ -30,8 +30,7 @@ render(){
                 <input type="text" name="userName" onChange={this.updateHandler} className="form-control"/><br/><br />
                 <label>Mobile No</label>
                 <input type="text" name="mobile" onChange={this.updateHandler} className="form-control"/><br/><br />
-                <label>User Name</label>
-                <input type="text" name="userName" onChange={this.updateHandler} className="form-control"/><br/><br />
+                
                 <label>Password</label>
                 <input type="text" name="password" onChange={this.updateHandler} className="form-control" /><br/><br />
                 <input type="submit" value="REGISTER" className="btn btn-primary"/><br/><br />
