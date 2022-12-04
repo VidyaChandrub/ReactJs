@@ -20,7 +20,7 @@ render(){
             <pre>{JSON.stringify(this.state.users)}</pre>
             <div className="row">
                 <div className="col-md-12">
-                    <table>
+                    <table className="table table-hover">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -32,7 +32,7 @@ render(){
                             <tbody>
                                 {
                                 this.state.users.map((user) =>{
-                                                                   return <tr>
+                                                                   return <tr key={user.id}>
                                                                     <td>{user.id}</td>
                                                                     <td>{user.username}</td>
                                                                     <td>{user.email}</td>
