@@ -1,26 +1,45 @@
 import React from "react";
+import Axios from "axios"
 class User extends React.Component{
+    state={
+        users : []
+    }
+    componentDidMount (){
+        Axios.get('https://jsonplaceholder.typicode.com/users')
+        .then((response) => {
+            this.setState({users : response.data})
+        })
+        .catch((err) => {
+                console.log(err)
+        })
+    }
+    
 render(){
     return(
         <div>
-            <pre>{JSON.stringify()}</pre>
+            <pre>{JSON.stringify(this.state.users)}</pre>
             <div className="row">
                 <div className="col-md-12">
                     <table>
                         <thead>
                             <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
+                                <th>ID</th>
+                                <th>USER NAME</th>
+                                <th>EMAIL</th>
+                                <th>ADDDRESS</th>
                             </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
+                                {
+                                this.state.users.map((user) =>{
+                                                                   return <tr>
+                                                                    <td>{user.id}</td>
+                                                                    <td>{user.username}</td>
+                                                                    <td>{user.email}</td>
+                                                                    <td>{user.address.street}</td>
+                                                                </tr>
+                                })
+}
                             </tbody>
                     </table>
                 </div>

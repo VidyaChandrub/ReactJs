@@ -10,7 +10,8 @@ import Eventbind from './EventBindig/Eventbind' */
 /* import Movie from './Movie' */
 /* import Employee from './Employee/Employee' */
 /* import Login from "./FormHandling/Login" */
-import Registration from './FormHandling/Registration'
+/* import Registration from './FormHandling/Registration' */
+import User from './Axios/User'
 let App = () => {
 
     return <div>
@@ -27,7 +28,8 @@ let App = () => {
     <Eventbind /> */}
     {/* <Employee /> */}
     {/* <Login /> */}
-    <Registration />
+    {/* <Registration /> */}
+    <User />
     </div>
     
 }
