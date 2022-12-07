@@ -6,6 +6,7 @@ import Contact from './Routing/Contact'
 import Message from './Hooks/Message'
 import Counter from './Hooks/Counter'
 import Product from './Hooks/Product'
+import Digital from './Hooks/Digital'
 let App = () => {
 
     return <>
@@ -18,6 +19,7 @@ let App = () => {
                 <Route path='/message' element={<Message />} />
                 <Route path='/counter' element={<Counter />}/>
                 <Route path='/product' element={<Product />}/>
+                <Route path="/digital" element={<Digital />} />
                 </Routes>
              </Router>
             </>
