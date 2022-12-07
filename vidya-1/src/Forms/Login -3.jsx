@@ -4,7 +4,10 @@ const Login = () => {
 
 let [user,setUser]=useState({email:"", password:""})
 
-
+let updateHandler = (event) => {
+    
+        setUser({...user, [event.target.name] : event.target.value})
+   }
     
   return (
     <div className='container'>
@@ -18,12 +21,8 @@ let [user,setUser]=useState({email:"", password:""})
                 </div>
                 <div className="card-body">
                 <form>
-        <div className='form-group'>Email Id : <input type="email" name="email" className='form-control' onChange={(event) => {
-    setUser({...user, [event.target.name] : event.target.value})
-   }}/></div>
-        <div className='form-group'>Password : <input type='password' name="password" className='form-control' onChange={(event) => {
-    setUser({...user, [event.target.name] : event.target.value})
-   }}/></div>
+        <div className='form-group'>Email Id : <input type="email" name="email" className='form-control' onChange={updateHandler}/></div>
+        <div className='form-group'>Password : <input type='password' name="password" className='form-control' onChange={updateHandler}/></div>
         <div><input type="submit" value="Login" className='btn btn-primary' /></div>
         </form>
         </div>
