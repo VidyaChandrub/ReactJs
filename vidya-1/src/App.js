@@ -8,6 +8,7 @@ import Counter from './Hooks/Counter'
 import Product from './Hooks/Product'
 import Digital from './Hooks/Digital'
 import Login from './Forms/Login'
+import LoginRef from './Hooks/LoginRef'
 let App = () => {
 
     return <>
@@ -22,6 +23,7 @@ let App = () => {
                 <Route path='/product' element={<Product />}/>
                 <Route path="/digital" element={<Digital />} />
                 <Route path='/login' element={<Login />}/>
+                <Route path='/loginref' element={<LoginRef />}/>
                 </Routes>
              </Router>
             </>
