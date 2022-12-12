@@ -1,4 +1,6 @@
 import Navbar from './Navbar/Navbar'
+import ContactApp from './Conatctapp/ContactApp'
+
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom'
 import Home from './Routing/Home'
 import About from './Routing/About'
@@ -15,6 +17,7 @@ let App = () => {
              <Router>
                 <Navbar />
                 <Routes>
+                  <Route path='contacts' element={<ContactApp />} />
                 <Route path='/home' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
