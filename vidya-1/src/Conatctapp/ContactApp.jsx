@@ -25,10 +25,10 @@ import Axios from 'axios'
         }
       )
   }
-  user_sel_contacts = (contact) => {
-    this.setState({ sel_Contact: contact })
+  user_Sel_Contact = (contact) => {
+    console.log(contact.name.first)
+    this.setState({sel_Contact: contact})
   }
-    
 
   
   render() {
@@ -41,14 +41,14 @@ import Axios from 'axios'
             {
               this.state.contacts.length > 0 ?
                <>
-               <ContactList contacts={this.state.contacts} sel_Contacts={this.state.sel_Contact}/>
+               <ContactList contacts={this.state.contacts} selected_Contacts={this.user_Sel_Contact}/>
                </> 
               : null
             }
             
           </div>
           <div className="col-md-4">
-            <ContactDetails user_sel_contacts={this.state.sel_Contact} />
+            <ContactDetails  user_sel_cnt={this.state.sel_Contact}/>
           </div>
         </div>
         
