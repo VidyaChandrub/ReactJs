@@ -7,7 +7,8 @@ import Axios from 'axios'
   constructor(props){
     super(props);{
       this.state = {
-        contacts : []
+        contacts : [],
+        sel_Contact : {}
       }
     }
   }
@@ -24,6 +25,9 @@ import Axios from 'axios'
         }
       )
   }
+  user_sel_contacts = (contact) => {
+    this.setState({ sel_Contact: contact })
+  }
     
 
   
@@ -31,19 +35,20 @@ import Axios from 'axios'
     return (
       <div className='container'>
         <pre>{JSON.stringify(this.state.contacts)}</pre>
+        <pre>{JSON.stringify(this.state.sel_Contact)}</pre>
         <div className="row">
           <div className="col-md-8">
             {
               this.state.contacts.length > 0 ?
                <>
-               <ContactList contacts={this.state.contacts}/>
+               <ContactList contacts={this.state.contacts} sel_Contacts={this.state.sel_Contact}/>
                </> 
               : null
             }
             
           </div>
           <div className="col-md-4">
-            <ContactDetails />
+            <ContactDetails user_sel_contacts={this.state.sel_Contact} />
           </div>
         </div>
         

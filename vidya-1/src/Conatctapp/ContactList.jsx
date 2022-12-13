@@ -6,6 +6,7 @@ import React, { Component } from 'react'
       <div className='container'>
         <h1>ContactList</h1>
         <pre>{JSON.stringify(this.props)}</pre>
+    
         <div className="row">
             <table className='table table-hover'>
                 <thead>
