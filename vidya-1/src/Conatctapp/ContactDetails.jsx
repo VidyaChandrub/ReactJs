@@ -10,13 +10,13 @@ export class ContactDetails extends Component {
             <div className="col">
                 <div className="card">
                     <div className="card-header">
-                     {/* <img src={this.props.user_sel_cnt.picture.large} /> */} 
+                     <img src={this.props.user_selContact.picture.large } alt="image1"/> 
                     </div>
                     <div className="card-body">
                     <ul className="list-group">
-                                    <li className="list-group-item">{this.props.user_Sel_Contact.name.first}</li>
-                                    <li className="list-group-item">{this.props.user_Sel_Contact.name.last}</li>
-                                    <li className="list-group-item">{this.props.user_Sel_Contact.dob.age}</li>
+                                    <li className="list-group-item">{this.props.user_selContact.name.first}</li>
+                                    <li className="list-group-item">{this.props.user_selContact.name.last}</li>
+                                    <li className="list-group-item">{this.props.user_selContact.dob.age}</li>
                                 </ul>
                     </div>
                 </div>

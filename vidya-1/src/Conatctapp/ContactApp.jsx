@@ -48,7 +48,7 @@ import Axios from 'axios'
             
           </div>
           <div className="col-md-4">
-            <ContactDetails  user_Sel_Contact={this.state.sel_Contact}/>
+            <ContactDetails  user_selContact={this.state.sel_Contact}/>
           </div>
         </div>
         
