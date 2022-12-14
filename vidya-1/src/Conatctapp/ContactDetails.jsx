@@ -17,6 +17,7 @@ export class ContactDetails extends Component {
                                     <li className="list-group-item">{this.props.user_selContact.name.first}</li>
                                     <li className="list-group-item">{this.props.user_selContact.name.last}</li>
                                     <li className="list-group-item">{this.props.user_selContact.dob.age}</li>
+                                
                                 </ul>
                     </div>
                 </div>

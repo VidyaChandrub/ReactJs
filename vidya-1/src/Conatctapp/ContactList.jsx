@@ -18,6 +18,7 @@ import React, { Component } from 'react'
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
+                        
                         <th>City</th>
                     </tr>
                 </thead>
@@ -27,6 +28,7 @@ import React, { Component } from 'react'
                             <td>{contact.login.uuid.substr(32)}</td>
                             <td>{contact.name.first}</td>
                             <td>{contact.email}</td>
+
                             <td>{contact.location.city}</td>
                         </tr>
                         })
