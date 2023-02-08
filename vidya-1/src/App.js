@@ -11,9 +11,11 @@ import Product from './Hooks/Product'
 import Digital from './Hooks/Digital'
 import Login from './Forms/Login'
 import LoginRef from './Hooks/LoginRef'
+import Array from './Practice/Array'
 let App = () => {
 
     return <>
+    <Array/>
              <Router>
                 <Navbar />
                 <Routes>
